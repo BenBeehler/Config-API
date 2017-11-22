@@ -211,7 +211,7 @@ public class ConfigManager {
 	
 	public List<String> getStringList(String path) {
 		if(isList(getValueFromPath(path).trim())) {
-			String stringValue = getValueFromPath(path);
+			String stringValue = getValueFromPath(path).trim();
 			
 			String[] charArray = stringValue.split("");
 			
